@@ -1,0 +1,10 @@
+This chapter introduces the fundamental concepts of Linux, including how Linux is structured, distributed, and used.
+
+Key topics covered:
+Kernel – The core of the Linux operating system that manages hardware and system resources.
+Distribution – A complete Linux operating system built around the Linux kernel, such as Ubuntu, Debian, or Fedora.
+Open Source – Software whose source code can be accessed, modified, and shared according to its licence.
+Command Line – A text-based way of interacting with Linux by entering commands to perform tasks.
+
+Key takeaway:
+I learned the basic components of Linux and how users can interact with and manage a Linux system using the command line.
