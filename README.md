@@ -3,7 +3,7 @@
 
 -[Chapter 02 -Operating Systems](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%202)
 
-[Chapter 03 -](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%202)
+-[Chapter 03 -Navigating the Linux Desktop](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%203)
 
 
 
