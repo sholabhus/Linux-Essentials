@@ -1,0 +1,17 @@
+This chapter is mainly about what an operating system is, how to choose one, and the different types of Linux distributions and where they are used.
+
+The main operating systems discussed are Windows, macOS and Linux. When choosing an operating system, organisations consider its role, function, lifecycle, stability, compatibility, cost and interface.
+
+I learnt that desktop systems mainly use a GUI, while servers often use a CLI because they are usually managed remotely.
+
+Linux is technically a kernel, while a Linux distribution combines the kernel with utilities, applications and management tools. Examples include Ubuntu, Debian, Fedora, Red Hat, SUSE and Linux Mint.
+
+Linux can be used through a GUI or CLI. The terminal allows users to interact with a shell, which interprets commands and passes them to the operating system.
+
+ I also learnt about virtualisation and cloud computing, which help organisations reduce infrastructure costs and simplify management.
+
+Finally, Linux is widely used in embedded systems, such as smartphones, smart TVs, Raspberry Pi devices, IoT devices and industrial systems.
+
+What I learnt
+
+I learnt what an operating system does, the difference between desktop and server systems, how GUI and CLI work, what Linux and Linux distributions are, the difference between a terminal and shell, and how Linux is used in servers, cloud environments and embedded systems.
