@@ -1,0 +1,20 @@
+Chapter 5 introduces the Linux Command Line Interface (CLI) and explains why it is an important part of working with Linux. Unlike graphical interfaces, the command line allows users to interact directly with the operating system by typing commands.
+
+The chapter explains the basic structure of Linux commands, including the command, options and arguments. It also introduces the Bash shell, which interprets commands entered by the user.
+
+I learned how to use commands such as ls to view files and directories and how options can change how a command works. The chapter also explains variables, quoting, the PATH variable, and the use of the home directory (~).
+
+What I Have Learned
+
+From this chapter, I have learned how to use the Linux command line to interact with the operating system. I now understand that the command line can be a powerful and efficient way of performing tasks.
+
+I learned the basic structure of a command and how options and arguments can change what a command does. I also learned about Bash, which interprets the commands I enter.
+
+I learned how variables work, for example NAME="Shola" and echo $NAME, and how the $ symbol is used to access the value stored in a variable.
+
+I also learned about quoting, the PATH variable, and the ~ symbol, which represents the user's home directory.
+
+Overall, this chapter has given me a better understanding of how to navigate and work with Linux using the command line rather than relying only on a graphical interface
+
+ls command -  Type the ls command at the prompt, which will list the files and directories contained in your current working directory. In this example, no options or arguments will be used
+
