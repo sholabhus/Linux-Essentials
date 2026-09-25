@@ -5,5 +5,9 @@
 
 -[Chapter 03 -Navigating the Linux Desktop](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%203)
 
+-[Chapter 04 -Open Source Software and Licensing]()
 
+-[Chapter 05 -Command Line Skills()
+
+-[Chapter 06 -Getting help
 
