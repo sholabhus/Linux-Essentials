@@ -7,7 +7,8 @@
 
 -[Chapter 04 -Open Source Software and Licensing](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%204)
 
--[Chapter 05 -Command Line Skills()
+-[Chapter 05 -Command Line Skills](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%205)
+  Labs
 
 -[Chapter 06 -Getting help
 
