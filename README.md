@@ -13,5 +13,5 @@
 
 -[Chapter 06 -Getting help](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%206)
 
--[Lab 06]
+-[Lab 06](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%206.pdf)
 
