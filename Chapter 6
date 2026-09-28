@@ -1,0 +1,7 @@
+In Chapter 6, I learnt how to find help and information when using Linux commands instead of having to remember everything.
+
+I learnt how to use the man command to read the manual for a command, and how to search within a manual page. I also learnt about the different sections of the Linux manual pages and what they are used for.
+
+I learnt how to use whatis to get a quick description of a command and man -k or apropos to search for commands using keywords. I also learnt about the info command, which provides more detailed documentation.
+
+Overall, the chapter taught me how to find the information I need when I'm unsure how a Linux command works.
