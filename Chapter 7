@@ -1,0 +1,57 @@
+This Chapter is about Linux file systems, directories, paths, and basic file management.
+
+The Linux root directory /
+/ is the top-level directory in Linux.
+All other directories are located underneath it.
+Example: /
+├── home
+├── etc
+├── var
+├── tmp
+└── root
+Home directories
+/home contains users' home directories.
+For example: /home/bob
+~ represents your own home directory.
+~bob represents Bob's home directory when used with cd.
+cd ~bob
+Absolute and relative paths
+Absolute path starts from /: 
+/etc/ppp
+/home/bob
+Relative path starts from your current location: 
+documents/file.txt
+Navigating directories with cd
+cd means change directory.
+cd /etc
+Go to /etc
+cd ..
+Go up one directory.
+cd ~
+Listing files with ls
+ls
+Lists files and directories.
+ls -a
+Hidden files
+Linux hidden files normally begin with a dot ..
+Example:
+.hidden
+.config
+Creating and managing files
+I learned commands such as: touch file.txt
+Creates a new empty file or updates its timestamp.
+Renames a file. -mv old.txt new.txt
+Copies a file. -cp file.txt backup.txt
+Removes a file.- rm file.txt
+The touch command can:
+Create new files
+Update the timestamp of existing files
+Wildcards / glob characters
+You learned three important glob characters:
+Character	Meaning
+*	Zero or more characters
+?	Exactly one character
+[ ]	Matches characters inside the brackets
+For example: ls *.txt  -finds files ending in .txt.
+
+Chapter 7 is being able to navigate the Linux file system and identify, create, rename, copy, remove and search for files using paths and wildcards
