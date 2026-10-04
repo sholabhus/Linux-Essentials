@@ -19,4 +19,8 @@
 
 -[Lab 07](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%207.pdf)
 
+[Chapter 08 -Navigating the Filesystem](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%208)
+
+-[Lab 08](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%208.pdf)
+
 
