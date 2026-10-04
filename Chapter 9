@@ -1,0 +1,18 @@
+Chapter 9 is about archiving and compressing files in Linux.
+
+Archiving combines multiple files/directories into one archive, mainly using tar.
+Compression reduces file size to save storage and make transferring files faster.
+Lossless compression keeps all the original information.
+Lossy compression removes some information to achieve a smaller file size.
+Common compression tools are gzip, bzip2, and xz.
+tar has three important operations:
+-c → Create
+-t → List
+-x → Extract
+-z is used with gzip.
+-j is used with bzip2.
+-v means verbose and shows what is being processed.
+-f specifies the archive filename.
+Linux also supports ZIP files using zip and unzip.
+zip -r is used to include directories and their contents.
+unzip -l lists the contents of a ZIP file.
