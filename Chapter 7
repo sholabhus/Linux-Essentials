@@ -1,4 +1,5 @@
-This Chapter is about Linux file systems, directories, paths, and basic file management.
+This Chapter is about the Linux file system and identify, create, rename, copy, remove and search for files using paths and wildcards
+
 
 The Linux root directory /
 / is the top-level directory in Linux.
@@ -54,4 +55,3 @@ Character	Meaning
 [ ]	Matches characters inside the brackets
 For example: ls *.txt  -finds files ending in .txt.
 
-Chapter 7 is being able to navigate the Linux file system and identify, create, rename, copy, remove and search for files using paths and wildcards
