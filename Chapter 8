@@ -1,0 +1,15 @@
+I learnt how to manage files and directories using the Linux command line.
+
+I learnt how to:
+
+Create files using touch
+Create directories using mkdir
+Copy files and directories using cp
+Move and rename files using mv
+Delete files using rm
+Remove empty directories using rmdir
+View file contents using cat and less
+Search for files using find
+Use wildcards such as * and ? to work with multiple filenames
+Understand the difference between files and directories
+Navigate directories and manage their contents from the terminal.
