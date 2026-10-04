@@ -19,8 +19,13 @@
 
 -[Lab 07](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%207.pdf)
 
-[Chapter 08 -Navigating the Filesystem](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%208)
+[Chapter 08 -Managing Files and Directories](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%208)
 
 -[Lab 08](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%208.pdf)
+
+[Chapter 09 -Archiving and Compression](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%209)
+
+-[Lab 09](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%209.pdf)
+
 
 
