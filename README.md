@@ -27,5 +27,10 @@
 
 -[Lab 09](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%209.pdf)
 
+[Chapter 10 -Archiving and Compression](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%2010)
+
+-[Lab 10](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2010.pdf)
+
+
 
 
