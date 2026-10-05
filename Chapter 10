@@ -1,0 +1,560 @@
+The chapter is mainly about viewing, searching, filtering, sorting and redirecting text in Linux.
+
+1. cat — display text
+
+cat displays the contents of a file.
+
+cat file.txt
+
+It can also create a file:
+
+cat > new.txt
+
+Then type your text and press Ctrl+D to finish.
+
+You can combine files:
+
+cat file1.txt file2.txt
+
+Remember: cat is good for small files. For large files, use less.
+
+2. less — view large files
+less file.txt
+
+Important keys:
+
+Key	What it does
+Space	Move forward one screen
+b	Move backward one screen
+Enter	Move forward one line
+q	Quit
+h	Help
+/word	Search forward
+?word	Search backward
+n	Next search match
+N	Previous search match
+
+Easy way to remember:
+less = read a file one screen at a time.
+
+3. head and tail
+
+head shows the beginning of a file.
+
+head file.txt
+
+By default, it shows 10 lines.
+
+Show 3 lines:
+
+head -n 3 file.txt
+
+tail shows the end of a file.
+
+tail file.txt
+
+Show the last 5 lines:
+
+tail -n 5 file.txt
+
+A particularly useful command:
+
+tail -f /var/log/somefile.log
+
+-f means follow the file, so you can watch new information being added.
+
+This is very useful for troubleshooting and monitoring logs.
+
+4. Pipes |
+
+This is one of the most important concepts in the chapter.
+
+The pipe takes the output of one command and sends it as input to another command.
+
+command1 | command2
+
+Example:
+
+ls /etc | head
+
+Think:
+
+ls produces the information → | passes it → head processes it.
+
+You can have multiple pipes:
+
+ls /etc/ssh | nl | tail -5
+
+This means:
+
+ls
+ ↓
+nl
+ ↓
+tail
+ ↓
+screen
+
+The order matters.
+
+For example:
+
+ls /etc/ssh | nl | tail -5
+
+numbers everything first and then takes the last five.
+
+But:
+
+ls /etc/ssh | tail -5 | nl
+
+takes the last five first and then numbers those five from 1–5.
+
+Key exam idea
+
+A pipe sends STDOUT from one command to STDIN of another command.
+
+5. Standard streams
+
+You need to know these three:
+
+Stream	Number	Meaning
+STDIN	0	Input
+STDOUT	1	Normal output
+STDERR	2	Error output
+
+An easy way to remember:
+
+0 = Input
+1 = Normal output
+2 = Error
+
+By default, they normally use the terminal.
+
+6. Output redirection >
+
+The > symbol sends STDOUT into a file.
+
+echo "Hello" > example.txt
+
+Instead of appearing on the screen, Hello goes into example.txt.
+
+Very important
+
+> overwrites the existing file.
+
+For example:
+
+echo "First" > example.txt
+echo "Second" > example.txt
+
+The file will contain:
+
+Second
+
+The first line is gone.
+
+7. Append >>
+
+>> adds information to the end of a file.
+
+echo "First" > example.txt
+echo "Second" >> example.txt
+
+The file becomes:
+
+First
+Second
+Remember
+>   = overwrite
+>>  = append
+
+This is an important exam point.
+
+8. Redirect errors with 2>
+
+Remember:
+
+STDERR = 2
+
+So:
+
+ls /fake 2> error.txt
+
+sends the error message into error.txt.
+
+You can then see it:
+
+cat error.txt
+Remember
+>    = STDOUT
+2>   = STDERR
+9. Redirect STDOUT and STDERR together
+
+You can send both to the same file:
+
+command &> all.txt
+
+For example:
+
+ls /fake /etc/ppp &> all.txt
+
+Both normal output and errors go into all.txt.
+
+You can also send them to different files:
+
+command > output.txt 2> error.txt
+
+So:
+
+STDOUT → output.txt
+STDERR → error.txt
+10. STDIN redirection <
+
+The < symbol tells a command to take its input from a file instead of the keyboard.
+
+Example:
+
+tr 'a-z' 'A-Z' < example.txt
+
+The file becomes the input to tr.
+
+You can also redirect the output:
+
+tr 'a-z' 'A-Z' < example.txt > newexample.txt
+
+Think:
+
+example.txt
+     ↓
+   STDIN
+     ↓
+    tr
+     ↓
+   STDOUT
+     ↓
+newexample.txt
+11. sort
+
+sort sorts lines alphabetically by default.
+
+sort file.txt
+
+Useful options:
+
+Option	Meaning
+-r	Reverse order
+-n	Numeric sorting
+-t	Specify delimiter
+-k	Specify field to sort
+
+For example:
+
+sort -t: -n -k3 mypasswd
+
+Means:
+
+-t: → fields are separated by :
+-k3 → sort using field 3
+-n → sort numerically
+Important
+
+Fields start at 1, not 0.
+
+12. wc
+
+wc = word count
+
+It can count:
+
+lines
+words
+bytes
+wc file.txt
+
+You will normally see:
+
+lines   words   bytes   filename
+
+Useful options:
+
+wc -l file.txt
+
+Count lines.
+
+wc -w file.txt
+
+Count words.
+
+wc -c file.txt
+
+Count bytes.
+
+A very useful combination:
+
+ls /etc | wc -l
+
+This counts the lines produced by ls.
+
+13. grep — search/filter text
+
+This is very important.
+
+grep searches for a pattern.
+
+grep bash /etc/passwd
+
+This displays lines containing bash.
+
+Important grep options
+Command	Meaning
+grep word file	Search for word
+grep -c word file	Count matching lines
+grep -n word file	Show line numbers
+grep -v word file	Show lines that DON'T match
+grep -i word file	Ignore case
+grep -w word file	Match whole word
+
+For example:
+
+grep -c bash /etc/passwd
+
+means:
+
+Count the number of lines containing bash.
+
+14. Regular expressions
+
+This is probably the most challenging part of Chapter 10, so don't worry if it initially looks complicated.
+
+Regular expressions, or regex, allow you to search for patterns rather than just exact words.
+
+The main ones you need to know are:
+
+Regex	Meaning
+.	Any single character
+[abc]	One character from a, b or c
+[a-z]	One character from a–z
+[^0-9]	A character that is NOT 0–9
+*	Zero or more occurrences
+^	Beginning of line
+$	End of line
+15. The period .
+
+. means any single character.
+
+For example:
+
+grep 'r..f' red.txt
+
+The pattern means:
+
+r
+any character
+any character
+f
+
+So:
+
+reef
+roof
+
+match.
+
+16. Brackets [ ]
+
+Brackets allow you to specify possible characters.
+
+[abc]
+
+means:
+
+match one character that is either a, b, or c.
+
+You can use a range:
+
+[0-9]
+
+means any digit from 0 to 9.
+
+Or:
+
+[a-z]
+
+means any lowercase letter.
+
+Negation
+[^0-9]
+
+means:
+
+match a character that is not a number.
+
+Important exam trap:
+[^0-9] does not mean "lines containing no numbers."
+
+It means it matches a non-numeric character.
+
+17. Asterisk *
+
+* means zero or more occurrences of the previous character/pattern.
+
+For example:
+
+re*d
+
+can match:
+
+rd
+red
+reed
+reeed
+
+because the e can occur zero or more times.
+
+Important
+
+* applies to what comes immediately before it.
+
+18. Anchors ^ and $
+
+These are very important.
+
+^ = beginning
+grep '^root' /etc/passwd
+
+Means:
+
+Find lines that start with root.
+
+$ = end
+grep 'r$' alpha-first.txt
+
+Means:
+
+Find lines that end with r.
+
+Think:
+
+^ = start
+$ = end
+19. Escaping special characters
+
+Sometimes you want to search for an actual special character.
+
+For example, * normally has a special regex meaning.
+
+To search for a literal *, use:
+
+\*
+
+Example:
+
+grep 're\*' newhome.txt
+
+The backslash \ tells grep:
+
+Treat this special character literally.
+
+20. Extended Regular Expressions
+
+Use:
+
+grep -E
+
+Important extended regex symbols:
+
+Symbol	Meaning
+?	Zero or one
++	One or more
+`	`
+
+Example:
+
+grep -E 'colou?r' spelling.txt
+
+Matches:
+
+color
+colour
+
+because u is optional.
+
+Another:
+
+grep -E 'e+' red.txt
+
+means:
+
+one or more e characters.
+
+And:
+
+grep -E 'gray|grey' spelling.txt
+
+means:
+
+Match gray OR grey.
+
+
+cat       → display/concatenate files
+less      → view large files
+more      → basic pager
+head      → beginning of file
+tail      → end of file
+tail -f   → follow a changing file
+|         → pipe output to another command
+
+STDIN     → 0 → input
+STDOUT    → 1 → normal output
+STDERR    → 2 → errors
+
+>         → overwrite file
+>>        → append to file
+2>        → redirect errors
+&>        → redirect STDOUT + STDERR
+<         → take input from file
+
+sort      → sort lines
+wc        → count lines/words/bytes
+grep      → search/filter
+
+grep -c   → count matches
+grep -n   → line numbers
+grep -v   → invert match
+grep -i   → ignore case
+grep -w   → whole word
+
+.         → any single character
+[abc]     → a, b or c
+[a-z]     → range
+[^0-9]    → NOT a number
+*         → zero or more
+^         → beginning
+$         → end
+
+grep -E
+?         → zero or one
++         → one or more
+|         → OR
+The biggest things to understand
+
+If you understand these five concepts, you've got the foundation of Chapter 10:
+
+less → safely view large files.
+| → pass one command's output to another command.
+> / >> / 2> / < → redirect input and output.
+grep → find/filter information.
+Regex → search for patterns rather than just exact text.
+
+For your Linux Essentials study, pipes, redirection, grep, and regular expressions are the areas I'd practise most, because they are easy to confuse in multiple-choice questions.
+
+This might also interest you.
+
+ManageEngine
+
+Server Monitoring Tool
+
+Real-time server monitoring for services, health & performance. Complete visibility 24x7.
+
+Ad
+More options
