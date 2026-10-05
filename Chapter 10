@@ -324,8 +324,6 @@ Count the number of lines containing bash.
 
 14. Regular expressions
 
-This is probably the most challenging part of Chapter 10, so don't worry if it initially looks complicated.
-
 Regular expressions, or regex, allow you to search for patterns rather than just exact words.
 
 The main ones you need to know are:
@@ -389,10 +387,6 @@ means:
 
 match a character that is not a number.
 
-Important exam trap:
-[^0-9] does not mean "lines containing no numbers."
-
-It means it matches a non-numeric character.
 
 17. Asterisk *
 
@@ -536,25 +530,10 @@ grep -E
 ?         → zero or one
 +         → one or more
 |         → OR
-The biggest things to understand
 
-If you understand these five concepts, you've got the foundation of Chapter 10:
-
-less → safely view large files.
-| → pass one command's output to another command.
-> / >> / 2> / < → redirect input and output.
-grep → find/filter information.
-Regex → search for patterns rather than just exact text.
-
-For your Linux Essentials study, pipes, redirection, grep, and regular expressions are the areas I'd practise most, because they are easy to confuse in multiple-choice questions.
-
-This might also interest you.
-
-ManageEngine
 
 Server Monitoring Tool
 
 Real-time server monitoring for services, health & performance. Complete visibility 24x7.
 
-Ad
-More options
+
