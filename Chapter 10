@@ -16,8 +16,6 @@ You can combine files:
 
 cat file1.txt file2.txt
 
-Remember: cat is good for small files. For large files, use less.
-
 2. less — view large files
 less file.txt
 
@@ -77,8 +75,6 @@ Example:
 
 ls /etc | head
 
-Think:
-
 ls produces the information → | passes it → head processes it.
 
 You can have multiple pipes:
@@ -115,8 +111,6 @@ A pipe sends STDOUT from one command to STDIN of another command.
 
 5. Standard streams
 
-You need to know these three:
-
 Stream	Number	Meaning
 STDIN	0	Input
 STDOUT	1	Normal output
@@ -137,8 +131,6 @@ The > symbol sends STDOUT into a file.
 echo "Hello" > example.txt
 
 Instead of appearing on the screen, Hello goes into example.txt.
-
-Very important
 
 > overwrites the existing file.
 
