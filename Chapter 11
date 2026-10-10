@@ -1,0 +1,23 @@
+I learnt that a shell script is a text file containing commands that can be executed together to automate tasks in Linux.
+Key things I learnt:
+1. Shell scripts – A shell script contains commands saved in a text file. When the script runs, the commands are executed in sequence.
+2. Automation – Scripts help automate repetitive tasks, saving time and reducing manual work.
+3. Creating scripts – I learnt that I can create and edit script files using a text editor such as nano.
+4. Executing scripts – Scripts can be run using a shell interpreter, such as Bash, or by making them executable and running them directly.
+5. Variables – Variables store information that can be reused in a script.
+6. Comments – The # symbol is used to add comments to explain what a script does. The shebang line, such as #!/bin/bash, specifies the interpreter to use when the script is executed directly.
+7. Decision-making – Scripts can use conditional statements, such as if, to make decisions based on whether a condition is true or false.
+8. Checking files and command output – Scripts can check whether files exist or examine command output before deciding what to do next.
+9. Debugging and testing – I learnt the importance of checking scripts for errors and confirming that they produce the expected results.
+Example of a simple Bash script
+#!/bin/bash
+# Display a welcome message
+
+echo "Welcome to Linux Essentials!"
+echo "Today I am learning basic scripting."
+Save the file as welcome.sh using Nano. You can run it with:
+bash welcome.sh
+The script displays two messages in the terminal.
+My main takeaway
+I learnt that basic scripting allows me to combine Linux commands into a single file to automate tasks. This is useful for system administration, checking files, managing systems and carrying out repetitive tasks more efficiently.
+Connection to cybersecurity: Bash scripting can help automate log checks, file monitoring and basic security tasks, making it a useful skill as I continue learning Linux and cybersecurity.
