@@ -31,6 +31,11 @@
 
 -[Lab 10](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2010.pdf)
 
+[Chapter 11 - Working with Text](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%2011)
+
+-[Lab 11](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2011.pdf)
+
+
 
 
 
