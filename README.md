@@ -31,9 +31,14 @@
 
 -[Lab 10](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2010.pdf)
 
-[Chapter 11 - Working with Text](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%2011)
+[Chapter 11 - Basic Scripting](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%2011)
 
 -[Lab 11](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2011.pdf)
+
+[Chapter 12 - Understanding Computer Hardware](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%2012)
+
+-[Lab 12](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2012.pdf)
+
 
 
 
