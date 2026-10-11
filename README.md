@@ -39,6 +39,12 @@
 
 -[Lab 12](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2012.pdf)
 
+[Chapter 13 - Where Data is Stored](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%2013)
+
+-[Lab 13](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2013.pdf)
+
+
+
 
 
 
