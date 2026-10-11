@@ -1,0 +1,33 @@
+In this chapter, I learnt about the main hardware components of a computer and how they work together to run an operating system like Linux.
+I learnt that:
+1. Motherboard: It connects the CPU, RAM, storage and other hardware components.
+2. CPU (Central Processing Unit): It is the brain of the computer and executes instructions. I also learnt the difference between single-core, multi-core and multiprocessor systems.
+3. 32-bit and 64-bit processors: A 32-bit system has more limited memory addressing capabilities, while a 64-bit system can support much more RAM.
+4. RAM and swap space: RAM temporarily stores programs and data currently in use. When RAM is running low, Linux can use swap space on disk as additional virtual memory, although it is slower than RAM.
+5. Buses and peripheral devices: Buses allow components to communicate. Devices such as keyboards, mice, monitors and network cards connect to the computer through different interfaces.
+6. Linux hardware commands: I learnt how to use:
+- arch — displays the system architecture.
+- lscpu — displays CPU information.
+- free -m — displays RAM and swap usage in megabytes.
+- lspci — lists devices connected through the PCI bus.
+- lsusb — lists connected USB devices.
+7. Hard drives and partitions: I learnt that storage devices can be divided into partitions and that Linux represents devices using files under /dev, such as /dev/sda and /dev/sda1.
+8. HDDs and SSDs: Traditional hard disk drives use spinning disks, while solid-state drives use flash memory. SSDs generally provide faster access to data and have no moving parts.
+9. Optical drives: CDs, DVDs and Blu-ray discs are removable storage media. Linux can mount them so their contents are accessible through the filesystem and unmount them safely when finished.
+10. Device drivers: Drivers allow the operating system to communicate with hardware. I learnt that checking Linux compatibility before purchasing or installing hardware can prevent problems.
+11. Video display devices: Graphics cards and monitors need compatible interfaces and drivers. Examples of display connections include VGA, DVI, HDMI and DisplayPort.
+12. Power supplies: A power supply converts alternating current (AC) into the direct current (DC) required by computer components. Reliable power is important for system stability and hardware protection.
+My overall understanding
+This chapter helped me understand that Linux does not operate independently of hardware. The CPU processes instructions, RAM holds data temporarily, storage retains data, and the motherboard and buses allow components to communicate. Linux uses drivers and system commands to recognise and manage these devices.
+I can use this knowledge when troubleshooting performance issues, checking system resources, identifying connected devices and investigating hardware-related problems on Linux systems.
+
+
+
+
+
+
+
+
+
+
+
