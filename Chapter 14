@@ -1,0 +1,11 @@
+Chapter 14 explains how Linux computers connect to networks, communicate with other devices, and access services such as websites and remote servers. It introduces network configuration, IP addressing, DNS, and Linux commands used to monitor and troubleshoot network problems.
+What I have learnt
+- Networking basics: I learnt the difference between a host, client, server, network, router and packet.
+- IP addresses: I learnt that IPv4 uses 32-bit addresses, while IPv6 uses 128-bit addresses to provide a much larger address space.
+- Network configuration: I learnt the difference between DHCP, which assigns network settings automatically, and a static IP address, which is configured manually.
+- DNS and configuration files: I learnt how DNS translates hostnames into IP addresses and the purpose of /etc/hosts, /etc/resolv.conf and /etc/nsswitch.conf.
+- Network commands: I learnt how to use commands such as ip addr show, ip route show and ping to check network settings, routing and connectivity.
+- Network troubleshooting: I learnt how dig and host help investigate DNS problems, and how ss and netstat display network connections, statistics and listening ports.
+- Remote access: I learnt how SSH allows secure remote access to another Linux machine and why verifying SSH host-key fingerprints is important for security.
+Key takeaway
+I have learnt how Linux networking works, how devices communicate using IP addresses, and how to use basic Linux commands to check network connectivity, troubleshoot DNS issues and inspect network connections. I also gained an understanding of the importance of SSH security when accessing remote systems.
