@@ -43,7 +43,7 @@
 
 -[Lab 13](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2013.pdf)
 
-[Chapter 14 - Where Data is Stored](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%2014)
+[Chapter 14 - Network Configuration](https://github.com/sholabhus/Linux-Essentials/blob/main/Chapter%2014)
 
 -[Lab 14](https://github.com/sholabhus/Linux-Essentials/blob/main/lab%2014.pdf)
 
